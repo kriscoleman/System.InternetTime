@@ -12,8 +12,6 @@ namespace System.InternetTime
         public const string NistUrl = "http://nist.time.gov/actualtime.cgi?lzbc=siqm9b";
         const string MediaTypeHeaderValue = "application/xhtml+xml";
 
-
-
         public static async Task<DateTime?> GetNistTimeAsync()
         {
             var client = new HttpClient(new NativeMessageHandler {DisableCaching = true});
