@@ -10,7 +10,7 @@ namespace System.InternetTime
     public class InternetTime
     {
         public const string NistUrl = "http://nist.time.gov/actualtime.cgi?lzbc=siqm9b";
-        const string MediaTypeHeaderValue = "text/html, application/xhtml+xml, */*";
+        const string MediaTypeHeaderValue = "application/xhtml+xml";
 
 
 
