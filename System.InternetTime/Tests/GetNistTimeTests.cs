@@ -1,7 +1,6 @@
 ﻿using System.InternetTime;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using FakeItEasy;
 
 namespace Tests
 { 

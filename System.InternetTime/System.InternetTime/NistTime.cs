@@ -1,9 +1,5 @@
-﻿using System.IO;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using ModernHttpClient;
 
 namespace System.InternetTime
 {
