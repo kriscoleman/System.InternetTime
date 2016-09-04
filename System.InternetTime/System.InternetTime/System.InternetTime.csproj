@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InternetTime.cs" />
+    <Compile Include="IInternetTime.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="NistTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleHttpClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LICENSE" />
