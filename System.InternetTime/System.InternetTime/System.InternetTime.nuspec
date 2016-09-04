@@ -9,7 +9,6 @@
 	<owners>Kris Coleman</owners>
 	<licenseUrl>https://github.com/kriscoleman/System.InternetTime/blob/master/LICENSE.md</licenseUrl>
 	<projectUrl>https://github.com/kriscoleman/System.InternetTime</projectUrl>
-	<iconUrl>https://avatars0.githubusercontent.com/u/21978023?v=3&s=40</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<description>A Simple Helper to Get Internet Time - Something I typically use to test a simple web request in C#.</description>
 	<releaseNotes></releaseNotes>
