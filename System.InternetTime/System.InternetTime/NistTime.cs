@@ -8,10 +8,26 @@ namespace System.InternetTime
     /// </summary>
     public class NistTime : IInternetTime
     {
+        readonly Client _timeClient;
         public const string NistUrl = "http://nist.time.gov/actualtime.cgi?lzbc=siqm9b";
         public const string NistMediaTypeHeaderValue = "application/xhtml+xml";
         public static double NistReponseToMillisecondsFunction(string responseContent)
             => Convert.ToInt64(Regex.Match(responseContent, @"(?<=\btime="")[^""]*").Value)/1000.0; //regEx arg ex: //<timestamp time=\"1395772696469995\" delay=\"1395772696469995\"/>
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NistTime"/> class.
+        /// </summary>
+        public NistTime()
+        { }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NistTime"/> class.
+        /// </summary>
+        /// <param name="timeClient">The time client. Allows you to inject a custom implementation of Client.</param>
+        public NistTime(Client timeClient)
+        {
+            _timeClient = timeClient;
+        }
 
         /// <summary>
         /// Gets NIST time asynchronously. Can be awaited to avoid blocking UI due to latency. 
@@ -53,7 +69,11 @@ namespace System.InternetTime
         /// Gets NIST time asynchronously. Can be awaited to avoid blocking UI due to latency. 
         /// </summary>
         /// <returns>The NIST time, in the NIST default time zone (GMT)</returns>
-        public async Task<DateTime?> GetAsync() => await new Client(TimeServerUrl, MediaTypeHeaderValue, ResponseToMillisecondsFunc).GetAsync();
+        public async Task<DateTime?> GetAsync()
+            =>
+                _timeClient != null
+                    ? await _timeClient.GetAsync()
+                    : await new Client(TimeServerUrl, MediaTypeHeaderValue, ResponseToMillisecondsFunc).GetAsync();
 
         /// <summary>
         /// Gets the NIST time. Not asynchronous, could block UI if it encounters latency. 
