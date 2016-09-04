@@ -52,6 +52,7 @@
     <None Include="LICENSE" />
     <None Include="packages.config" />
     <None Include="README.md" />
+    <None Include="System.InternetTime.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
