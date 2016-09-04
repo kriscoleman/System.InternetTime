@@ -10,7 +10,6 @@
 	<licenseUrl>https://github.com/kriscoleman/System.InternetTime/blob/master/LICENSE.md</licenseUrl>
 	<projectUrl>https://github.com/kriscoleman/System.InternetTime</projectUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<description>A Simple Helper to Get Internet Time - Something I typically use to test a simple web request in C#.</description>
 	<releaseNotes></releaseNotes>
 	<copyright>Copyright 2016; Kris Coleman  All rights reserved.</copyright>
 	<tags>internettime c# webtime timeserver time</tags>
