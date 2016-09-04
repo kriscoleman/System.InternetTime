@@ -14,7 +14,4 @@
 	<copyright>Copyright 2016; Kris Coleman  All rights reserved.</copyright>
 	<tags>internettime c# webtime timeserver time</tags>
   </metadata>
-  <files>
-	<file src="\bin\$configuration$\Sytem.InternetTime.dll" target="lib\net40\" />
-  </files>
 </package>
