@@ -4,7 +4,8 @@
 	<id>System.InternetTime</id>
 	<version>$version$</version>
 	<title>System.InternetTime</title>
-	<authors>Microsoft, Kris Coleman</authors>
+	<description>A Simple Helper to Get Internet Time - Something I typically use to test a simple web request in C#</description>
+	<authors>Kris Coleman</authors>
 	<owners>Kris Coleman</owners>
 	<licenseUrl>https://github.com/kriscoleman/System.InternetTime/blob/master/LICENSE.md</licenseUrl>
 	<projectUrl>https://github.com/kriscoleman/System.InternetTime</projectUrl>
